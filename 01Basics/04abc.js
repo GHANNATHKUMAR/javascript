@@ -1,4 +1,4 @@
-// two types of data types : primitive(number , string , boolean , symbol  is used to make uniqueness even if we take same value , undefined ) an nonprimitive (array , onject , function )
+// two types of data types : primitive(number , string , boolean ,(symbol  is used to make uniqueness) even if we take same value , undefined ) and nonprimitive (array , object , function )
 
 // stack and heap 
 // primitives make copy of varianle 

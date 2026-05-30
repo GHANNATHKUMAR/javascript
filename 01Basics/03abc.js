@@ -27,4 +27,8 @@ let num1,num2=2
 
 
 // comparison of datatypes 
-// 
+// let , const , var and var is never used generally...  
+// Type of things -> datatype -> number , String , Boolean , undefined -> primitives 
+// array , object , function  -> nonprimitive
+// null , undefined 
+

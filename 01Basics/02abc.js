@@ -15,5 +15,5 @@ console.log(3+4)
 // type of null -> object 
 // type of undefined -> undefiend 
 console.log(typeof 23)    
-so note that undefined is itself a datatype , but null is an object 
+// so note that undefined is itself a datatype , but null is an object 
 
