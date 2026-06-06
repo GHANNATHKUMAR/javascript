@@ -16,5 +16,3 @@ console.log(instructor)
 // take value from fetch api calls , store in a variable and we know object how to use 
 // and sometimes data comes in array of objects 
 
-
-
