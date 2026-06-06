@@ -24,3 +24,4 @@ console.log(val) // 210 so jab pahla value mil jayega vahi return kar dega
 
 // terniary operator 
 // a>b ? print(a)  : print(b)  
+
