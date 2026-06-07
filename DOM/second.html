@@ -14,10 +14,35 @@
     </div>
 </body>
 <script>
-    const parent=document.querySelector('.parent');
+//     const elements = document.querySelectorAll('.parent'); // it returns nodelist so there is foEach method 
+// elements.forEach((element) => {
+//   element.innerHTML = "GHNNATH KLUMAR";
+// });
 
-    console.log(parent) 
 
-    
+const parent = document.querySelector('.parent');
+
+// if (parent) {
+//   // Convert HTMLCollection to Array and apply forEach
+//   [...parent.children].forEach((element) => {
+//     element.innerHTML = "GHNNATH KLUMAR";
+//   });
+// }
+ 
+
+console.log(parent.children[1]) // monday 
+parent.children[1].style.color='blue'
+console.log(parent.firstElementChild)
+console.log(parent.lastElementChild)
+
+// from child to parent 
+const dayone=document.querySelector('.day')
+console.log(dayone)
+console.log(dayone.parentElement) // parent get 
+console.log(dayone.nextElementSibling) //Monday 
+
+console.log(parent.childNodes) // it not givesnumber frommonday to wednesday but it gives alll as nod eincluding line break and comment etc .. 
+
+
 </script>
 </html>
