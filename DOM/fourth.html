@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    body{
+        background-color: rgb(102, 113, 102);
+    }
+         .button {
+            display: inline-block; 
+            height: 100px;
+            width: 100px; 
+            
+        }
+    </style>
+</head>
+<body>
+    <h1> color code scheme </h1>
+  <div>
+    <span class="button " id="grey"  style="background-color: grey;" > </span>
+   <span class="button" id="blue" style="background-color:blue;" ></span>
+    <span class="button" id="white" style="background-color:white ;" ></span>
+     <span class="button" id="red" style="background-color:red;" ></span>
+  </div>
+  <h2> Click on any button to change color of body ... </h2>
+</body>
+<script>
+  const buttons =  document.querySelectorAll('.button');
+  buttons.forEach((button)=>{
+    button.addEventListener('click' , function(e){
+        console.log(e);
+        console.log(e.target);
+        document.body.style.backgroundColor= e.target.id; 
+    })
+  })
+</script>
+</html>
