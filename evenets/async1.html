@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Chai Aur Code - Interval Demo</title> 
+</head> 
+<body> 
+    <h1>chai aur code</h1> 
+    <button id="stop">stop</button> 
+    <button id="start">start</button> 
+
+    <script> 
+        // 1. Core function to display the date
+        const sayDate = function(str) { 
+             document.body.querySelector('h1').innerHTML="Ghnanath kumar" ; 
+        } 
+
+        // 2. DOM Elements Selection
+        const startBtn = document.querySelector('#start'); 
+        const stopBtn = document.querySelector('#stop'); 
+        
+        // 3. Variable to store the interval ID (initialized to null)
+        let intervalId = null; 
+
+        // 4. Start Event Listener (with safety check)  
+        startBtn.addEventListener('click', function(e) { 
+            if (!intervalId) { 
+                intervalId = setInterval(sayDate, 1000, "ghannath"); 
+                console.log("Interval started.");
+            } 
+        }); 
+
+        // 5. Stop Event Listener (with safety cleanup)
+        stopBtn.addEventListener('click', function(e) { 
+            if (intervalId) {
+                clearInterval(intervalId); 
+                intervalId = null; // Reset variable to allow restarting
+                console.log("Interval stopped.");
+            }
+        }); 
+    </script> 
+</body> 
+</html>
