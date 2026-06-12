@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    const user={
+        name : "ghannath",
+        email : "ghannathk@gmail.com" ,
+        contact : 85586869586,
+        getnformation : function(){
+            console.log("congratulations to all of you ")
+        }
+    }
+    function user(name , email , contact) { 
+        this.name=name
+        this.email=email
+        this.contact=contact
+        this.greeting = function(){
+            console.log("namaste bhai log ")
+            console.log(`welcome bro ${this.name} `)
+        }
+    }
+    const userOne = new user("chhotu", "chhotu@gmail.com" , 97986786579785)
+    const usertwo=new user("bhola", "bhola@gmail.com" , 9855486958609)
+    console.log(userOne)
+    console.log(usertwo)
+    
+
+</script>
+
+
+</html>
