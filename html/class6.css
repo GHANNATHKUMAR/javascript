@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    background-color: blue;
+    padding: 10px;
+    margin: 10px;
+}
+.box1 , .box2{
+ width: 200px;
+ height: 200px;
+ background-color: red;
+ margin: 10px;
+}
+
+/* 
+if we define borderbox then padding and border are included in the element's total width and height and margin alwayas adds an extra space  */

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tut9.css" > 
+</head>
+<body>
+    <div class="container">
+        <form action="">
+        <h1>Payment form </h1>
+        <h2>Contact Information</h2>
+        <p>Required fields are followed by *</p>
+        <p>Name* : <input type="text" required name="name" id="name" placeholder="Enter Your Name"></p>
+        <fieldset>
+            <legend>Gender * 
+
+            </legend>
+            <p>
+                <input type="radio" required name ="male" id="male" value="male ">
+                <label for="male">Male</label>
+                <input type="radio" required name ="female" id="female" value="female">
+                <label for="female">Female</label>
+            </p>
+        </fieldset>
+        <p>Address :
+            <br> <textarea name="address" id="address" rows="4" cols="50" placeholder="Enter Your Address"></textarea></p>
+        <p>Email * : <input type="email" required name="email" id="email" placeholder="Enter Your Email"></p>
+        <p>Pincode * : <input type="text" required name="pincode" id="pincode" placeholder="Enter Your Pin Code"></p>
+        <p>Payment Information </p>
+        <p>
+            Card Type * :
+            <select name="cardtype" id="cardtype" required>
+                <option value="">Select Card Type</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="amex">American Express</option>
+                </select>
+        </p>
+         <p>
+            Card Number * : <input type="text" required name="cardnumber" id="cardnumber" placeholder="Enter Card Number">
+            <br>Expiration Date * : <input type="date" required name="expiration" id="expiration">
+            <br>CVV * : <input type="text" required name="cvv" id="cvv" placeholder="Enter CVV">
+        </p>
+       <input type="submit" value="Pay Now">
+       <button type="reset" value="Reset" style="margin-left: 150px;">Reset</button>
+    </form> 
+    </div>
+    <!-- 
+    Note : now next goal is media queiries and box model..
+    In box model there can be 2 way box-sizing : content-box and border-box. In content-box the width and height of the element is calculated by only content but in border-box the width and height of the element is calculated by content + padding + border. So in border-box we can easily set the width and height of the element without worrying about padding and border. So it is recommended to use border-box for better control over the layout of the page.
+    and in media queries we use @media rule to apply different styles for different screen sizes. For example, we can use @media (max-width: 600px) to apply styles for screens that are 600px or smaller. This is useful for making the website responsive and look good on all devices.
+    
+    -->
+</body>
+</html>

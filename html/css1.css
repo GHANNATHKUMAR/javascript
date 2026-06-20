@@ -1,0 +1,32 @@
+h1+p{
+    color: red;
+}
+li[class~="a"]{
+color:green;
+}
+/* 
+text-indent The text-indent property in CSS is used to set the amount of horizontal space that should appear before the first line of text in a block-level element, such as a
+ 
+
+*/
+/* 
+note px, rem , em and %  
+so px is fix size 
+and em is according to the font size of immediate parent element 
+rem is according to the font size of root element (html)
+and % is according to the parent element width 
+
+
+latter-spacing The letter-spacing property in CSS is used to control the amount of space between characters in a text. It can be specified using various units, such as pixels (px), em, rem, or percentage (%).
+word-spacing : The word-spacing property in css used to control  the amount of space between words in a text. It can be specified using various units, such as pixels (px), em, rem, or percentage (%).
+line-weight The line-weight property in CSS is used to specify the thickness of lines, such as borders or outlines. It can be defined using various units, such as pixels (px), em, rem, or percentage (%).
+text-shadow The text-shadow property in CSS is used to add shadow effects to text. It allows you to specify the horizontal and vertical offsets, blur radius, and color of the shadow. The syntax for the text-shadow property is as follows:
+text-shadow: [horizontal offset] [vertical offset] [blur radius] [color];
+
+*/
+
+/* 
+shorthand properties 
+multiple property in one line : 
+margin : 10px 20px 30px 40px; top , right , bottom , left
+ */
